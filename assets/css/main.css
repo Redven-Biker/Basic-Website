@@ -1,0 +1,188 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  -webkit-text-size-adjust: none; }
+
+/* Basic */
+@-ms-viewport {
+  width: device-width; }
+
+body {
+  -ms-overflow-style: scrollbar; }
+
+@media screen and (max-width: 480px) {
+  html, body {
+    min-width: 320px; } }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%; }
+  @media screen and (max-height: 640px) {
+    html, body {
+      height: auto;
+      min-height: 100%; } }
+
+body {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 6em 4em 4em 4em; }
+  body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important; }
+  body > * {
+    position: relative;
+    z-index: 2; }
+/* BG */
+#bg {
+  -moz-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  height: 100%;
+  left: 0;
+  opacity: 0.375;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  #bg div {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 150%; }
+    #bg div.visible {
+      -moz-animation: bg 45s linear infinite;
+      -webkit-animation: bg 45s linear infinite;
+      -ms-animation: bg 45s linear infinite;
+      animation: bg 45s linear infinite;
+      opacity: 1;
+      visibility: visible;
+      z-index: 1; }
+      #bg div.visible.top {
+        z-index: 2; }
+      @media screen and (max-width: 1280px) {
+        #bg div.visible {
+          -moz-animation: bg 29.25s linear infinite;
+          -webkit-animation: bg 29.25s linear infinite;
+          -ms-animation: bg 29.25s linear infinite;
+          animation: bg 29.25s linear infinite; } }
+      @media screen and (max-width: 736px) {
+        #bg div.visible {
+          -moz-animation: bg 18s linear infinite;
+          -webkit-animation: bg 18s linear infinite;
+          -ms-animation: bg 18s linear infinite;
+          animation: bg 18s linear infinite; } }
+    #bg div:only-child {
+      -moz-animation-direction: alternate !important;
+      -webkit-animation-direction: alternate !important;
+      -ms-animation-direction: alternate !important;
+      animation-direction: alternate !important; }
+  body.is-preload #bg {
+    opacity: 0; }
+
+body, input, select, textarea {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Roboto", sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.65em; }
+
+p {
+  margin: 0 0 2em 0; }
+
+  .discord {
+    box-shadow:inset 0px -3px 7px 0px #29bbff;
+    background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+    background-color:#2dabf9;
+    border-radius:3px;
+    border:1px solid #0b0e07;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:24px;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+  }
+  .discord:hover {
+    background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+    background-color:#0688fa;
+  }
+  .discord:active {
+    position:relative;
+    top:1px;
+  }
+
+  .fivem {
+    box-shadow:inset 0px -3px 7px 0px #f9b22d;
+    background:linear-gradient(to bottom, #f9b22d 5%, #ff9900 100%);
+    background-color:#f9b22d;
+    border-radius:3px;
+    border:1px solid #0b0e07;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:24px;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+  }
+  .fivem:hover {
+    background:linear-gradient(to bottom, #f9b22d 5%, #f9b22d 100%);
+    background-color:#f9b22d;
+  }
+  .fivem:active {
+    position:relative;
+    top:1px;
+  }
